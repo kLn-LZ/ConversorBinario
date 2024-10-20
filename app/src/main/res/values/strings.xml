@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ConversorBinario</string>
+    <string name="Byte">Bytes</string>
+    <string name="KB">KB</string>
+    <string name="MB">MB</string>
+    <string name="GB">GB</string>
+    <string name="TB">TB</string>
+    <string name="bitHint">Valor em bits</string>
+    <string name="btnConverter">Converter</string>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rgConversor"
+        android:layout_width="74dp"
+        android:layout_height="241dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="245dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/teBit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/rbByte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Byte" />
+
+        <RadioButton
+            android:id="@+id/rbKB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/KB" />
+
+        <RadioButton
+            android:id="@+id/rbMB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/MB" />
+
+        <RadioButton
+            android:id="@+id/rbGB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/GB" />
+
+        <RadioButton
+            android:id="@+id/rbTB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/TB" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/teBit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="57dp"
+        android:ems="10"
+        android:hint="@string/bitHint"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/rgConversor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rgConversor"
+        app:layout_constraintTop_toTopOf="@+id/rgConversor" />
+
+    <Button
+        android:id="@+id/btnConverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/btnConverter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgConversor" />
+
+    <TextView
+        android:id="@+id/tvRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="83dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="347dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="192dp"
+        android:text="KELVIN SANTOS GUIMARAES - RA:	1110482313029"
+        app:layout_constraintBottom_toTopOf="@+id/rgConversor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
